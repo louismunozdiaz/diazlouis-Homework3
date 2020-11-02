@@ -2,39 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=decide-width, initial-scale=1.0">
-    <title>Name Ascending</title>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        a {
-            color: white;
-        }
-
-        #employees {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #employees td, #employees th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #employees tr:nth-child(even){background-color: #f2f2f2;}
-
-        #employees tr:hover {background-color: #ddd;}
-
-        #employees th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
+    <meta content="width=decide-width, initial-scale=1.0" name="viewport">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Homework 3</title>
 </head>
 <body>
 <form action="addEmployee.html">
@@ -53,15 +23,15 @@
     <tr>
         <td>
             <label for="eid"></label>
-            <input type="text" id="eid" size="10" placeholder="e.g. 93612">
+            <input id="eid" placeholder="e.g. 93612" size="10" type="text">
         </td>
         <td>
             <label for="name"></label>
-            <input type="text" id="name" size="10" placeholder="e.g. John Doe">
+            <input id="name" placeholder="e.g. John Doe" size="10" type="text">
         </td>
         <td>
             <label for="positions"></label>
-            <select name="positions" id="positions">
+            <select id="positions" name="positions">
                 <option>none</option>
                 <option>E-0</option>
                 <option>E-1</option>
@@ -77,15 +47,15 @@
         </td>
         <td>
             <label for="yos"></label>
-            <input type="text" id="yos" size="2" placeholder="e.g. 6">
+            <input id="yos" placeholder="e.g. 6" size="2" type="text">
         </td>
         <td>
             <label for="salary"></label>
-            <input type="text" id="salary" size="10" placeholder="e.g. 45,000">
+            <input id="salary" placeholder="e.g. 45,000" size="10" type="text">
         </td>
         <td>
             <label for="sid"></label>
-            <select name="sid" id="sid">
+            <select id="sid" name="sid">
                 <option>none</option>
                 <option>15330</option>
                 <option>22863</option>
