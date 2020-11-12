@@ -82,7 +82,7 @@ public class PopulateDB {
         //we need to remember the SIDS
         ArrayList<Integer> sids = new ArrayList();
         //while we still have supes to add
-        while (sids.size() < 20) {
+        while (sids.size() < 10) {
             //get a name
             String name = lnames[random.nextInt(lnames.length)] + ", "
                     + fnames[random.nextInt(fnames.length)];
@@ -103,7 +103,7 @@ public class PopulateDB {
 
         }
         System.out.println("Populated SUPERVISORS");
-        int employees = 50;
+        int employees = 65;
         //create a bunch of employees
         while (employees > 0) {
 
