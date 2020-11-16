@@ -1,6 +1,9 @@
-package cs.roosevelt.homework3.supervisor;
+package cs.roosevelt.homework3.controller;
 
+import cs.roosevelt.homework3.entity.Supervisor;
+import cs.roosevelt.homework3.service.SupervisorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 public class SupervisorController {
     @Autowired

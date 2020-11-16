@@ -1,5 +1,6 @@
-package cs.roosevelt.homework3.supervisor;
+package cs.roosevelt.homework3.repository;
 
+import cs.roosevelt.homework3.entity.Supervisor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

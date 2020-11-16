@@ -1,7 +1,9 @@
-package cs.roosevelt.homework3.supervisor;
+package cs.roosevelt.homework3.service;
 
+import cs.roosevelt.homework3.entity.Supervisor;
 import cs.roosevelt.homework3.exception.NoDataFoundException;
 import cs.roosevelt.homework3.exception.SupervisorNotFoundException;
+import cs.roosevelt.homework3.repository.SupervisorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

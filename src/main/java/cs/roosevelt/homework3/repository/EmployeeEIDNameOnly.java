@@ -1,4 +1,4 @@
-package cs.roosevelt.homework3.employee;
+package cs.roosevelt.homework3.repository;
 
 public interface EmployeeEIDNameOnly {
     int getEid();

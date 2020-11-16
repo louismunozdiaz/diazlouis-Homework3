@@ -1,5 +1,8 @@
-package cs.roosevelt.homework3.employee;
+package cs.roosevelt.homework3.controller;
 
+import cs.roosevelt.homework3.repository.EmployeeEIDNameOnly;
+import cs.roosevelt.homework3.service.EmployeeService;
+import cs.roosevelt.homework3.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 public class EmployeeController {
     @Autowired
@@ -22,7 +26,7 @@ public class EmployeeController {
      */
     @GetMapping(value = {"/employees", "/{sid}/employees", "/employees/{pos}", "/{sid}/employees/{pos}"})
     public List<Employee> getEmployees(@PathVariable(required = false) Optional<Integer> sid,
-                                                 @PathVariable(required = false) Optional<String> pos) {
+                                       @PathVariable(required = false) Optional<String> pos) {
         return employeeService.getEmployees(sid, pos);
     }
 

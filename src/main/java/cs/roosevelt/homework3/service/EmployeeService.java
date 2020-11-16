@@ -1,10 +1,13 @@
-package cs.roosevelt.homework3.employee;
+package cs.roosevelt.homework3.service;
 
+import cs.roosevelt.homework3.entity.Employee;
 import cs.roosevelt.homework3.exception.EmployeeFoundException;
 import cs.roosevelt.homework3.exception.EmployeeNotFoundException;
 import cs.roosevelt.homework3.exception.NoDataFoundException;
 import cs.roosevelt.homework3.exception.SupervisorNotFoundException;
-import cs.roosevelt.homework3.supervisor.SupervisorRepository;
+import cs.roosevelt.homework3.repository.EmployeeEIDNameOnly;
+import cs.roosevelt.homework3.repository.EmployeeRepository;
+import cs.roosevelt.homework3.repository.SupervisorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

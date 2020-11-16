@@ -1,4 +1,4 @@
-package cs.roosevelt.homework3.employee;
+package cs.roosevelt.homework3.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

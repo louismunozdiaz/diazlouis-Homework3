@@ -1,10 +1,10 @@
-package cs.roosevelt.homework3.employee;
+package cs.roosevelt.homework3.repository;
 
+import cs.roosevelt.homework3.entity.Employee;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
     /* Get employee by EID */
