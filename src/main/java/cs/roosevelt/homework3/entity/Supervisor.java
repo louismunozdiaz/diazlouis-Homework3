@@ -1,5 +1,7 @@
 package cs.roosevelt.homework3.entity;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -7,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "SUPERVISORS")
+@Data
 public class Supervisor {
     @Id
     int sid;
@@ -16,37 +19,4 @@ public class Supervisor {
 
     @NotBlank
     String department;
-
-    public Supervisor() {
-    }
-
-    public Supervisor(int sid, String name, String department) {
-        this.sid = sid;
-        this.name = name;
-        this.department = department;
-    }
-
-    public int getSid() {
-        return sid;
-    }
-
-    public void setSid(int sid) {
-        this.sid = sid;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
 }
